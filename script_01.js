@@ -21,17 +21,16 @@ function startApp() {
 }
 
 function getNumber1() {
-	return prompt("Zahl 1 eingeben:");
+	return parseInt(prompt("Zahl 1 eingeben:"));
 }
 
 function getNumber2() {
-	return prompt("Zahl 2 eingeben:");
+	return parseInt(prompt("Zahl 2 eingeben:"));
 }
 
 function getOp() {
 	return prompt("Operator eingeben:");
 }
-
 
 
 // module: calculator | tests:
