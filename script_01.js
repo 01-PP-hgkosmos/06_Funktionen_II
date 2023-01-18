@@ -34,10 +34,14 @@ function getOp() {
 
 	let op = prompt("Operator eingeben:");
 	
-	if (false) {
+	if (op == "+" || op == "-" || op == "*" || op == "/" || op == ":") {
+
 		return op;
+	
 	} else {
+	
 		return ERROR_STR_GEN;
+	
 	}
 
 }
