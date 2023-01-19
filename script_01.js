@@ -28,12 +28,12 @@ function getNumber2() {
 }
 
 // module: operator input| Test:
-output(getOp());
+// output(getOp());
 function getOp() {
 
 	let op = prompt("Operator eingeben:");
 	
-	if (op == "+" || op == "-" || op == "*" || op == "/" || op == ":") {
+	if (isOpValid(op)) {
 
 		return op;
 	
@@ -45,6 +45,12 @@ function getOp() {
 
 }
 
+// module: operator valide?| Test:
+output(isOpValid("+"));
+output(isOpValid("#?!"));
+function isOpValid(op) {
+	return op == "+" || op == "-" || op == "*" || op == "/" || op == ":";
+}
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
